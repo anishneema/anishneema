@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5 {
 }
 
 header {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -45,12 +45,12 @@ header .navbar-collapse {
 header .navbar {
   padding-top: 0;
   padding-bottom: 0;
-  background: transparent !important;
+  background: rgba(0, 0, 0, 1) !important;
 }
 
 @media (max-width: 991.98px) {
   header .navbar {
-    background: rgba(0, 0, 0, 0.4) !important;
+    background: rgba(0, 0, 0, 1) !important;
     padding-top: .5rem;
     padding-bottom: .5rem;
   }
@@ -184,7 +184,7 @@ header .navbar.navbar-light .nav-link.active {
 }
 
 .site-hero .lead {
-  font-size: 30px;
+  font-size: 25px;
   color: #fff;
   opacity: .8;
   margin-bottom: 30px;
@@ -202,10 +202,10 @@ header .navbar.navbar-light .nav-link.active {
 
 .site-hero.overlay:before {
   content: "";
-  background: rgba(0, 0, 0, 1);
+  background: rgba(0, 0, 0, 0.5);
   width: 100%;
   z-index: 1;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
@@ -1282,7 +1282,6 @@ blockquote p {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  padding: 5em 0;
 }
 
 .site-footer a {
